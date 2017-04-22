@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href /reddit-clone",
+    "build": "ng build --prod --base-href /reddit-clone/",
     "deploy": "git subtree push --prefix dist/ origin gh-pages",
     "test": "ng test",
     "lint": "ng lint",
