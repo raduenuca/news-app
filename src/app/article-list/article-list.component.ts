@@ -12,7 +12,7 @@ import { ArticleService } from '../article.service';
   styleUrls: [ './article-list.component.css' ]
 } )
 export class ArticleListComponent implements OnInit {
-  private articles: Observable<Article[]>;
+  public articles: Observable<Article[]>;
 
   constructor( private articleService: ArticleService,
                private activatedRoute: ActivatedRoute ) {

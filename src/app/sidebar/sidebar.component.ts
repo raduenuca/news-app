@@ -10,7 +10,7 @@ import { ArticleService } from '../article.service';
   styleUrls: [ './sidebar.component.css' ]
 } )
 export class SidebarComponent implements OnInit {
-  private sources: Observable<any>;
+  public sources: Observable<any>;
 
   constructor( private articleService: ArticleService ) {
     this.sources = articleService.sources;
@@ -19,5 +19,4 @@ export class SidebarComponent implements OnInit {
   ngOnInit() {
     this.articleService.getSources();
   }
-
 }

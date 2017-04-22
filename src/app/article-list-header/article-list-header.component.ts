@@ -9,8 +9,8 @@ declare var jQuery: any;
   styleUrls: ['./article-list-header.component.css']
 })
 export class ArticleListHeaderComponent implements OnInit {
-  private currentFilter: string = 'Time';
-  private sortDirection: number = 1;
+  public currentFilter: string = 'Time';
+  public sortDirection: number = 1;
 
   constructor(private articleService: ArticleService) {
   }
