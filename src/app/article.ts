@@ -10,6 +10,7 @@ interface ArticleJSON {
 
 export class Article {
   public publishedAt: Date;
+  public url: string;
 
   static fromJSON(json: ArticleJSON): Article {
     let article = Object.create(Article.prototype);
